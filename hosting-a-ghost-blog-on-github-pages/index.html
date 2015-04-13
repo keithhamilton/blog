@@ -1,0 +1,518 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Hosting a Ghost Blog on Github Pages</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=a58162a7ab">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://blog.tcpkeith.com/hosting-a-ghost-blog-on-github-pages/">
+    
+    <meta property="og:site_name" content="Keith's Blog of Reasonable Certainty">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Hosting a Ghost Blog on Github Pages">
+    <meta property="og:description" content="I recently set up my website, with custom domain, on Github Pages. After I did that, I wanted to set up a blog as well, but wasn't really sure where to start. I stumbled over Jekyll, then discovered Hugo, but...">
+    <meta property="og:url" content="http://blog.tcpkeith.com/hosting-a-ghost-blog-on-github-pages/">
+    <meta property="article:published_time" content="2015-04-10T22:31:14.088Z">
+    <meta property="article:modified_time" content="2015-04-11T02:05:42.150Z">
+    <meta property="article:tag" content="blog">
+    <meta property="article:tag" content="github">
+    <meta property="article:tag" content="hosting">
+    <meta property="article:tag" content="ghost">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hosting a Ghost Blog on Github Pages">
+    <meta name="twitter:description" content="I recently set up my website, with custom domain, on Github Pages. After I did that, I wanted to set up a blog as well, but wasn't really sure where to start. I stumbled over Jekyll, then discovered Hugo, but...">
+    <meta name="twitter:url" content="http://blog.tcpkeith.com/hosting-a-ghost-blog-on-github-pages/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Keith&#x27;s Blog of Reasonable Certainty",
+    "author": {
+        "@type": "Person",
+        "name": "Keith Hamilton",
+        "image": "//www.gravatar.com/avatar/a8530ea2304f1ea9134ee3e2fd06dedc?s=250&d=mm&r=x",
+        "url": "http://blog.tcpkeith.com/author/keith",
+        "sameAs": "http://tcpkeith.com"
+    },
+    "headline": "Hosting a Ghost Blog on Github Pages",
+    "url": "http://blog.tcpkeith.com/hosting-a-ghost-blog-on-github-pages/",
+    "datePublished": "2015-04-10T22:31:14.088Z",
+    "dateModified": "2015-04-11T02:05:42.150Z",
+    "keywords": "blog, github, hosting, ghost",
+    "description": "I recently set up my website, with custom domain, on Github Pages. After I did that, I wanted to set up a blog as well, but wasn&#x27;t really sure where to start. I stumbled over Jekyll, then discovered Hugo, but..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.5">
+    <link rel="alternate" type="application/rss+xml" title="Keith's Blog of Reasonable Certainty" href="http://blog.tcpkeith.com/rss/">
+</head>
+<body class="post-template tag-blog tag-github tag-hosting tag-ghost-tag nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-blog-home" role="presentation"><a href="http://tcpkeith.com/blog">Blog Home</a></li>
+            <li class="nav-tcpkeithcom" role="presentation"><a href="http://tcpkeith.com">tcpkeith.com</a></li>
+            <li class="nav-kdo2g-twitter" role="presentation"><a href="https://twitter.com/kdo2g">kdo2g (Twitter)</a></li>
+            <li class="nav-keithstagr_am-instagram" role="presentation"><a href="https://instagram.com/keithstagr_am">keithstagr_am (Instagram)</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button" href="index.html#"><span class="burger">☰</span><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-blog tag-github tag-hosting tag-ghost-tag featured">
+
+        <header class="post-header">
+            <h1 class="post-title">Hosting a Ghost Blog on Github Pages</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-04-10">10 April 2015</time>  on <a href="../tag/blog/">blog</a>, <a href="../tag/github/">github</a>, <a href="../tag/hosting/">hosting</a>, <a href="../tag/ghost-tag/">ghost</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>I recently set up my website, with custom domain, on Github Pages. After I did that, I wanted to set up a blog as well, but wasn't really sure where to start. I stumbled over Jekyll, then discovered Hugo, but ended up landing on Ghost. As it turns out, setting up a static Ghost blog on Github Pages is fairly straightforward, just not widely publicized.</p>
+
+<p>Let me show you something.  </p>
+
+<hr>
+
+<p><em>What follows is a narrative of how I came to my current setup. If you want to jump right to the instructions on how to set up a Ghost blog in GH Pages, click <a href="index.html#part2settinguptheblog">here</a>.</em></p>
+
+<h5 id="preface">Preface</h5>
+
+<p>I am a backend developer. I am <strong>not</strong> a frontend developer. Although it is becoming passé to distinguish between the two, I am perfectly comfortable with the fact that I suck at frontend design and am relatively ignorant about frontend tech. </p>
+
+<p>For this reason, I knew, from the start, that I would not:</p>
+
+<ul>
+<li>design my own site</li>
+<li>build my own blog templates</li>
+<li>be able to create a responsive site</li>
+<li>learn how to design my own responsive site and build my own templates</li>
+</ul>
+
+<p>I also knew, from the start, that:</p>
+
+<ul>
+<li>I am reasonably comfortable with CSS, and can get pretty far with a good boilerplate</li>
+<li>I am very comfortable with devops, so doing some extra legwork to get my blog hosted on Github Pages, with a custom domain would not be an issue.</li>
+<li>I am extremely comfortable, for a project such as this, not spending two weeks digging in to frontend tech/practices just to publish a blog, regardless of how lazy that makes me sound.</li>
+</ul>
+
+<p>Right. With that out of the way, let's dig in. Let's talk about Github Pages first, cause if you don't know about that, you really should.</p>
+
+<hr>
+
+<h4 id="part1decidingtouseghostformyblog">Part 1: Deciding to use Ghost for my blog</h4>
+
+<hr>
+
+<h5 id="ghpages">GH Pages</h5>
+
+<p>Ok, so if you're familiar with Github Pages, whatsoever, you will recall that any repository under your Github account can be served as a webpage, if two criteria are met:</p>
+
+<ul>
+<li>The repo has a branch called <code>gh-pages</code></li>
+<li>The repo has an <code>index.html</code> page at its root (in the <code>gh-pages</code> branch)</li>
+</ul>
+
+<p>Voila! With those two criteria, you can publish your repository as a project page, located at: </p>
+
+<pre><code>https://&lt;your_username&gt;.github.io/&lt;repo_name&gt;  
+</code></pre>
+
+<p>That's good for project pages, but if you want to have a "top-level" static site on GH Pages, you can simply create repository in your GH account called:</p>
+
+<pre><code>&lt;your_username.github.io&gt;  
+</code></pre>
+
+<p>and add your site to the master branch. Done.</p>
+
+<p>Now that we've covered the cursory GH Pages talk, let's move on to our options for static site generation.</p>
+
+<h5 id="staticsitefirsttryhugo">Static Site - First Try: Hugo</h5>
+
+<p>When I set out to get my blog set up, I had already set up a personal website on GH Pages, at <a href="http://keithhamilton.github.io">http://keithhamilton.github.io</a>, and I didn't want to clobber it, or combine it into one mashed up site. This left me with the option of creating a new "project repository" for my blog, then somehow linking it back to my main site.</p>
+
+<p>Remembering the above details about creating a project page, I was like: "<em>Sweet.</em> All I have to do is make a new repository called, let's say, <em>blog,</em> and it will be available on my site at <code>/blog</code>."</p>
+
+<p>After recalling that convenience, I started looking for static blog engines that would fit. I'd seen Jekyll before, but always felt like it was a little cumbersome, and cluttery. In my searching, I came across a relatively new contender, <a href="http://gohugo.io">Hugo</a>, created by the team at <a href="http://vim.spf13.com">spf13</a>.</p>
+
+<p>First off, I love their documentation. It is super easy to read, easy to follow along with, and...Bingo! They have a tutorial on <a href="http://gohugo.io/tutorials/github-pages-blog/">how to create and host a Hugo-generated blog on GH Pages</a>! </p>
+
+<p>I was sold.</p>
+
+<p>Then I wasn't. Ok, it's not that they don't have a wonderful product...they do. It was a combination of three things that eventually drove me away:</p>
+
+<ol>
+<li>To host your project on GH Pages, you kind of have to deviate from the natural flow of creating a blog using the Hugo cli.  </li>
+<li>The third-party themeing is a little wonky. Some themes would display my posts properly, some wouldn't. Of the themes that "worked" for me, I couldn't find one that I actually liked looking at.  </li>
+<li>The publishing steps in the above tutorial are a little cumbersome to get through, and I found myself scratching my head as often as not (although I would eventually come to understand them, and use them in my current workflow).</li>
+</ol>
+
+<p>I waffled back and forth on just biting the bullet and going with a theme that I wasn't entirely stoked on (content is the real purpose, afterall), but couldn't do it in the end. So...</p>
+
+<h5 id="staticsitesecondtryjekyll">Static Site - Second Try: Jekyll</h5>
+
+<p>I lasted all of five minutes with Jekyll, which is two mintues more than is suggested on <a href="http://jekyllbootstrap.com">this page</a>. </p>
+
+<p>It's hard to put my finger on. Yes, I am ever-so-slightly biased against Ruby. I have no real reason to be, I just am.</p>
+
+<p>Then there's the directory structure. Everything (almost) is prefixed with an underscore, which I just find odd. Why would you make that choice? If everything is prefixed, then nothing is. That's just weird.</p>
+
+<p>Then there's the use of <code>rake</code> for some tasks, and <code>jekyll</code> for others...it's just kind of a mess, or, at least, not the kind of mess I like to work with.</p>
+
+<h5 id="staticsitethirdtryghost">Static Site - Third Try: Ghost</h5>
+
+<p>I remember thinking, when Ghost first came out, that it was pretty neat. Wordpress had run its course, and, after having administered a cluster of Wordpress sites myself, I was fine leaving it behind.</p>
+
+<p>I also like writing in Markdown or ReST. Check. <br>
+I also like live previews. Check. <br>
+I also like that it's open source so I can download it and host it myself. Cheeeee-ehk.</p>
+
+<p>"Oh crap. Ghost is designed to be run as a hosted service, or as a server that <em>serves</em> your blog. Shit. This might be a deal breaker."</p>
+
+<p>I sat there, once again trying to come to terms with having to use Hugo, along with some theme that I wasn't entirely stoked on (even after making my own customizations to it). <em>Tick, tock. Tick, tock.</em></p>
+
+<p>"Let me google this for me: 'ghost running on github pages'"</p>
+
+<p>First result I see is a link to a forum post, the "answer" to which was: </p>
+
+<pre><code>"Why would anyone want to run a Ghost blog on Github Pages?!?"
+</code></pre>
+
+<p>Well, <em>cretin,</em> for starters, it's <strong>free.</strong> Secondly, what the fuck kind of answer is that? "Hey man, I have a question." "Cool, I have an answer: goooooooooo fuck yourself." IDK. The internet is a weird place.</p>
+
+<p>I digress. The next link I hit nailed it. Some <a href="https://github.com/axitkhurana">very smart person</a> developed a very nice brute-force tool that will take the contents of a running Ghost server and turn the blog site into a static site. That tool is called <a href="https://github.com/axitkhurana/buster">Buster</a>, and it rules.</p>
+
+<p>The only downside of using Ghost is that you can't really edit your posts in your own way. I prefer using emacs for all code/text/markdown editing, but because Ghost is served and stores all post-related information in a sqlite database (default), you are kind of stuck using Ghost's web-based editor. On the flip side of that, it does give you a live preview of your post, so that's neat. </p>
+
+<p>In the end, this tradeoff was one that I was relatively happy making, so I went with it. I had my personal website set up, a blog repo set up, Ghost running on my machine, and Buster to turn it into a static site which I could post to GH Pages. </p>
+
+<p><strong>Now let's talk about how I did it.</strong></p>
+
+<hr>
+
+<h4 id="part2settinguptheblog">Part 2: Setting up the Blog</h4>
+
+<p><em>Warning:</em> this section of the post assumes you are basically familiar with:</p>
+
+<ul>
+<li>command line</li>
+<li>running commands at the command line</li>
+<li>Conan The Barbarian (1982)</li>
+</ul>
+
+<p>If you are not familiar with anything here, please consider using <a href="https://ghost.org">Ghost's hosted service</a>.  </p>
+
+<hr>
+
+<h5 id="theheartofthematter">The Heart of the Matter</h5>
+
+<p>Right, so now you know where I'm at and how I got here. Let's run through, beginning to end, how to set up your own Ghost-backed blog, with a custom domain, using free-ninety-nine Github Pages.</p>
+
+<p><strong>Note:</strong> <em>These instructions assume you are running OS X. If you are running a Linux variant, you will need to take some side steps. If you are running Windows, you will need to dance a jig to make these instructions work.</em></p>
+
+<h6 id="step1setupyourownsiteinghpages">Step 1: Set up your own site in GH Pages</h6>
+
+<ol>
+<li>Log in to Github in your browser, and create a new repository named: <br>
+<code>&lt;your_username&gt;.github.io</code></li>
+<li>Next, clone the site repo down, create the index page, commit and push:</li>
+</ol>
+
+<pre><code class="language-shell">#/bin/bash
+
+# clone the repository
+$ git clone https://github.com/&lt;your_username&gt;/&lt;your_username&gt;.github.io
+
+# create an index page
+$ cat &lt;&lt; EOF &gt;&gt; index.html
+&lt;html&gt;  
+&lt;body&gt;Hello, World&lt;/body&gt;  
+&lt;/html&gt;  
+EOF
+
+# commit and push the index page
+$ git add index.html
+$ git commit -m "initial commit"
+$ git push origin master
+</code></pre>
+
+<p>Your site should now display your hello world page when you navigate to <code>http://&lt;your_username&gt;.github.io</code>.</p>
+
+<h6 id="step2setupyourblogrepository">Step 2: Set up your blog repository</h6>
+
+<p>Arguably the most confusing part of the process. I will admit that I'm taking a cue from the <a href="http://gohugo.io/tutorials/github-pages-blog/">Hugo blog post</a> on setting up your blog with GitHub pages. </p>
+
+<p>As we mentioned in the section on GH Pages (<a href="index.html#gh-pages">above</a>), your repo needs a <code>gh-pages</code> branch, and it needs to have a valid <code>index.html</code> file in that branch. </p>
+
+<p>Since we will be keeping the ghost blog <em>server</em> content in the <code>master</code> branch, we can set up a sub-module on the <code>master</code> branch to which we can publish the content of our site, and have that mirror to the <code>gh-pages</code> branch.</p>
+
+<p>This way, instead of:</p>
+
+<ul>
+<li>write</li>
+<li>generate static site content</li>
+<li>copy to gh-pages branch</li>
+<li>commit/push</li>
+</ul>
+
+<p>We just have to:</p>
+
+<ul>
+<li>write</li>
+<li>generate static site content</li>
+<li>commit/push</li>
+</ul>
+
+<p>From here it looks like a trivial difference, but it will really make things easier. So, now to set up the blog repository:</p>
+
+<ol>
+<li>Log into your Github account and create a new repository called <code>blog</code>. Make sure to include a <code>README.md</code> file when you create it.  </li>
+<li>Next, clone the repo down, create the sub module, gh-pages, public directory (where the content will mirror to the gh-pages branch), then push it all up.</li>
+</ol>
+
+<pre><code class="language-shell">#bin/bash
+
+# clone the blog repo
+$ git clone https://github.com/&lt;your_username&gt;/blog
+
+# check out orphaned gh-pages branch
+$ git checkout --orphan gh-pages
+
+# checkout one file from master so we can commit to the gh-pages branch
+$ git checkout master README.md
+
+# commit and push
+$ git add .
+$ git commit -m "initial commit"
+$ git push origin gh-pages
+
+# return to master branch
+$ git checkout master
+
+# delete public dir if it exists (it probably doesn't)
+if [ -e public ]; then  
+  rm -rf public
+fi
+
+# add the gh-pages sub-module (it will look like a folder in the master branch)
+git subtree add --prefix=public git@github.com:&lt;your_username&gt;/blog.git gh-pages --squash
+
+# pull down the file we just committed. This helps avoid merge conflicts
+git subtree pull --prefix=public git@github.com:&lt;your_username&gt;/blog.git gh-pages
+
+# create an index page in /public
+cat &lt;&lt; EOF &gt;&gt; public/index.html  
+&lt;html&gt;  
+  &lt;body&gt;Hello, Blog.&lt;/body&gt;
+&lt;/html&gt;  
+EOF
+
+# commit and push
+git add .  
+git commit -m "Initial blog commit"
+
+# push to the subtree (public dir)
+git subtree push --prefix=public git@github.com:&lt;your_username&gt;/blog.git gh-pages  
+</code></pre>
+
+<p>Cool. At this point, here's where we are at:</p>
+
+<ul>
+<li>your homepage should be live: <code>http://&lt;your_username&gt;.github.io</code></li>
+<li>your blog should be live: <code>http://&lt;your_username&gt;.github.io/blog</code></li>
+</ul>
+
+<p>Let's set up Ghost.</p>
+
+<h6 id="step3installsetupghost">Step 3: Install &amp; Set up Ghost</h6>
+
+<p>Alright, now we need to download a copy of the Ghost blogging platform.</p>
+
+<ol>
+<li>Navigate to <a href="https://ghost.org/download/">Ghost's download page</a>, and grab a copy of the blogging platform. Don't worry, it's free and open source.  </li>
+<li>Unzip the downloaded .zip file, and copy its entire contents into your blog folder (wherever you cloned it).  </li>
+<li><code>cd</code> into the blog folder, and run <code>npm install --production</code>. <br>
+<strong>Note:</strong> <em>If you are one the cutting edge, and using <a href="http://iojs.org">iojs</a>, this will fail. You will need to install the most recent version of <a href="http://nodejs.org">nodejs</a> to continue. Lame.</em></li>
+<li>Once that's finished installing, run <code>npm start</code> and watch as your skeleton blog comes to life right <a href="../ghost">here</a>.  </li>
+<li>Dial in any settings you want, such as your blog name, your details, and all that shit, then congratulate yourself on getting this far, because we are about to take this to the next level.  </li>
+<li><strong>Don't kill the Ghost process,</strong> because we will need that in the next step.</li>
+</ol>
+
+<h6 id="step4buster">Step 4: Buster</h6>
+
+<p><a href="https://github.com/axitkhurana/buster">Buster</a> is the lynchpin for this entire process.</p>
+
+<p>Buster essentially <code>wgets</code> (downloads) any page generated by Ghost and builds a static site directory from it, which you can use to profit.</p>
+
+<p><strong>NOTE:</strong> <em>this part of the process involves you having pip installed on your machine. That part of the install will be included in the instructions below, just in case you don't have it.</em></p>
+
+<p>Let's get into this. The below shell script should work to:</p>
+
+<ul>
+<li>Get pip + buster installed</li>
+<li>Generate your static site to the <code>public</code> folder of your blog repository</li>
+</ul>
+
+<p>It's actually quite simple. With the Ghost server running (from the step above), execute this in order, skipping stuff if you don't need to do it:</p>
+
+<pre><code class="language-shell">#!/bin/bash
+
+# install pip, if you don't have it
+if [ ! -e /usr/local/bin/pip ]; then  
+  sudo easy_install pip
+fi
+
+# install buster
+pip install buster
+
+# cd into the directory where you cloned your blog
+cd /path/to/your/blog/repo
+
+# run buster to generate a static version of your 
+# Ghost site in the public dir of your blog repo
+buster generate --dir=public  
+</code></pre>
+
+<p>Holy shit! You just generated your blog as a static site. If you want to test it out, just navigate into the public directory where the content was generated, and run:</p>
+
+<pre><code class="language-shell">python -m SimpleHTTPServer  
+</code></pre>
+
+<p>This will launch a simple HTTP server on port <code>8000</code> on your machine. Just navigate to <code>http://localhost:8000</code> to check the site out.</p>
+
+<p>We are so close to being done. The next step is publishing your blog to the web. </p>
+
+<h6 id="step5publishthatshit">Step 5: Publish that shit</h6>
+
+<p>The first thing you will want to do is create a script in the root of your blog repo folder called <code>deploy.sh</code>. It should look something like this:</p>
+
+<pre><code class="language-shell">#!/bin/bash
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+
+#remove previously generated site
+if [ -e ./public ]; then  
+  rm -rf public
+fi
+
+#generate static site
+buster generate --dir=public
+
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg="rebuilding site `date`"  
+git commit -m "$msg"
+
+# Push source and build repos.
+git push origin master  
+git subtree push --prefix=public git@github.com:&lt;your_username&gt;/blog.git gh-pages
+</code></pre>
+
+<p>Once you have that at the root of your blog repo folder, here's how you are going to publish (and re-publish) your blog:</p>
+
+<ol>
+<li>If you haven't already, make your deploy script executable by running <code>chmod +x deploy.sh</code> from the root directory of your blog folder.  </li>
+<li>Start up your Ghost server (from your blog folder) by running from the cli: <code>npm start</code>.  </li>
+<li>Make whatever changes you want: posts, settings, etc., by opening a browser, navigating to <code>http://localhost:2368/ghost</code>, then doing your thing.  </li>
+<li>Once you are ready to publish your blog, open a new terminal prompt in the same blog repo folder, and run <code>./deploy.sh</code>.</li>
+</ol>
+
+<p>This will generate the static blog site in the <code>public</code> directory, then commit everything and push it to the subtree in your GH repository. </p>
+
+<p>Navigate to <code>http://&lt;your_username&gt;.github.io/blog</code> and check it out. You now have a blog.</p>
+
+<p>If you are going to go legit, which I highly recommend, I would consider setting up a custom domain for your GH Pages site and associated blog. Doing so will give you a cleaner look:</p>
+
+<ul>
+<li>http://<your_username>.github.io =&gt; <a href="http://yourcustomdomain.com">http://yourcustomdomain.com</a> (or biz/io/whatevs)</your_username></li>
+<li>http://<your_username>.github.io =&gt; <a href="http://blog.yourcustomdomain.com">http://blog.yourcustomdomain.com</a></your_username></li>
+</ul>
+
+<p>It looks better, feels better, and will make you happier when you tell the address to someone else.</p>
+
+<p>--K</p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/keith/" style="background-image: url(http://www.gravatar.com/avatar/a8530ea2304f1ea9134ee3e2fd06dedc?s=250&amp;d=mm&amp;r=x)"><span class="hidden">Keith Hamilton's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/keith/">Keith Hamilton</a></h4>
+
+                    <p>Read <a href="../author/keith/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Portland, OR</span>
+                    <span class="author-link icon-link"><a href="http://tcpkeith.com">http://tcpkeith.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Hosting%20a%20Ghost%20Blog%20on%20Github%20Pages&amp;url=http://blog.tcpkeith.com/hosting-a-ghost-blog-on-github-pages/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.tcpkeith.com/hosting-a-ghost-blog-on-github-pages/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://blog.tcpkeith.com/hosting-a-ghost-blog-on-github-pages/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://blog.tcpkeith.com">Keith's Blog of Reasonable Certainty</a> © 2015</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script src="../public/jquery.js?v=a58162a7ab"></script>
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=a58162a7ab"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=a58162a7ab"></script>
+
+</body>
