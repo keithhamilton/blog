@@ -1,28 +1,32 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Keith's Blog of Reasonable Certainty</title><description>Code, food, space, kids. I will talk about stuff here. I may not have all of the answers, but I have some ideas.</description><link>http://blog.tcpkeith.com/</link><generator>Ghost 0.5</generator><lastBuildDate>Mon, 13 Apr 2015 15:14:05 GMT</lastBuildDate><atom:link href="http://blog.tcpkeith.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Fewer vs. Less</title><description>&lt;h2 id="ihavelessapplesthanididyesterday"&gt;I have less apples than I did yesterday.&lt;/h2&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Keith's Blog of Reasonable Certainty</title><description>Code, food, space, kids. I will talk about stuff here. I may not have all of the answers, but I have some ideas.</description><link>http://blog.tcpkeith.com/</link><generator>Ghost 0.5</generator><lastBuildDate>Mon, 13 Apr 2015 17:28:07 GMT</lastBuildDate><atom:link href="http://blog.tcpkeith.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Fewer vs. Less</title><description>&lt;h2 id="ihavelessapplesthanididyesterday"&gt;I have less apples than I did yesterday.&lt;/h2&gt;
 
 &lt;hr&gt;
 
-&lt;img src="http://blog.tcpkeith.com/content/images/2015/04/Grammar-Errors-SAT-ACT-Prep-800x430.jpg" alt="Fewer vs. Less"&gt;&lt;p&gt;I've been reading a lot of essays on the "correctness" of Standard English lately, and I've been waffling on the idea. In some regards, it seems perfectly correct that there is a standard set of grammar rules, and that they can be violated. In other regards, one must ask, "How do those rules get made in the first place?"&lt;/p&gt;
+&lt;img src="http://blog.tcpkeith.com/content/images/2015/04/Grammar-Errors-SAT-ACT-Prep-800x430.jpg" alt="Fewer vs. Less"&gt;&lt;p&gt;I've been reading a lot of essays on the "correctness" of Standard English lately, and I've been waffling on the idea of it being correct or not. In some regards, it seems perfectly correct that there is a standard set of grammar rules, and that they can be violated. In other regards, one must ask, "How do those rules get made in the first place? Why is one thing correct in the first place?"&lt;/p&gt;
 
 &lt;p&gt;Take "fewer" versus "less." If we go by Standard English, this is a mistake you will hear and/or make every day. The rule goes like this:&lt;/p&gt;
 
 &lt;h4 id="foracollectionofthingsifthethingcanbecountedusefewerotherwiseuseless"&gt;For a collection of things, if the "thing" can be counted, use &lt;strong&gt;&lt;em&gt;"fewer,"&lt;/em&gt;&lt;/strong&gt; otherwise use &lt;strong&gt;&lt;em&gt;"less."&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;So, for example, would you ever say "I have 15 clothing"? You wouldn't, because "clothing" is not an enumerable (countable) thing. So, if you got rid of some clothing, you would say "I have &lt;strong&gt;&lt;em&gt;less&lt;/em&gt;&lt;/strong&gt; clothing than I used to have."&lt;/p&gt;
+&lt;p&gt;So, for example, you would never say "I have 15 clothing," because "clothing" is not an enumerable (countable) thing. It follows that if you got rid of some clothing, you would say "I have &lt;strong&gt;&lt;em&gt;less&lt;/em&gt;&lt;/strong&gt; clothing than I used to have."&lt;/p&gt;
 
-&lt;p&gt;Would you ever say "I have 25 apples"? Yes, you could say that. If you ate three apples, you would then say "I have &lt;strong&gt;&lt;em&gt;fewer&lt;/em&gt;&lt;/strong&gt; apples than I used to have."&lt;/p&gt;
+&lt;p&gt;Might you ever say "I have 25 apples"? Yes, you might say that. If you ate three apples, you would then say "I have &lt;strong&gt;&lt;em&gt;fewer&lt;/em&gt;&lt;/strong&gt; apples than I used to have."&lt;/p&gt;
 
-&lt;p&gt;This is the "correct" way to say something is in a smaller quantity than something else. My question now is "why?" It's clear that just using "less" all of the time doesn't conflate meaning; if it did, no one would make this mistake in general. You would never say "I have more apples" just after losing a few.&lt;/p&gt;
+&lt;p&gt;This is the "correct" way to say something is in a smaller quantity than something else. My question now is "why?" A strong defense for there being no "correct" English is that there really is &lt;em&gt;no&lt;/em&gt; reason why this rule exists; it is likely it was just a stylistic convention at one point, and became "law." &lt;/p&gt;
 
-&lt;p&gt;Some argue that because something is said in general it is inherently correct. I'm still now sure where I stand on that, but this idea hinges on the original question: &lt;/p&gt;
+&lt;p&gt;It's clear that just using "less" all of the time doesn't conflate meaning; if it did, no one would make this mistake in general. You would never say "I have smaller apples" just after eating a few, because "smaller" is obviously a size comparator, not a quantity comparator. "Less" and "fewer," however, are both quantity compartors, and only differ based on the type of enumerable they are describing.&lt;/p&gt;
+
+&lt;p&gt;Some will argue that because something is said in general it is inherently correct. I suppose I can take that as true, as all artistic convention is just that—the majority opinion and execution of its practictioners. At any rate, the question of whether there is a "correct" English demands a very important question be answered: &lt;/p&gt;
 
 &lt;h2 id="howdorulesofgrammargetmadeinthefirstplace"&gt;How do rules of grammar get made in the first place?&lt;/h2&gt;
 
 &lt;p&gt;I don't mean "what authority" or "what group," I mean whatever body decides what the rules are...where does it get its information? It seems preposterous that a group of people would sit around in a room and just fabricate rules based on fancy. What seems more reasonable is that the group of people who "decide" what standard language is are taking general usage and trying to fabricate rules that describe it.&lt;/p&gt;
 
-&lt;p&gt;If "general usage" is the north star for the group of grammarians who codify our language, then &lt;em&gt;we,&lt;/em&gt; the entire body of speakers, are the ones who make the rules. This is not to say that anything is correct, rather that if it's generally spoken, it is correct.&lt;/p&gt;
+&lt;p&gt;If "general usage" is the north star for the group of grammarians who codify our language, then &lt;em&gt;we,&lt;/em&gt; the entire body of speakers, are the ones who make the rules. If this is true, then there really is only the language as spoken, and its late-to-the-party counterpart, grammar.&lt;/p&gt;
 
-&lt;p&gt;So, is it incorrect to say "I have less apples than I had yesterday"? Yes. For now.&lt;/p&gt;
+&lt;p&gt;Ok, so...is it incorrect to say "I have less apples than I had yesterday"? &lt;/p&gt;
+
+&lt;p&gt;Yes. For now.&lt;/p&gt;
 
 &lt;p&gt;--K&lt;/p&gt;</description><link>http://blog.tcpkeith.com/fewer-vs-less/</link><guid isPermaLink="false">0093b365-146a-4b4b-a015-f6d2f7e5413e</guid><dc:creator>Keith Hamilton</dc:creator><pubDate>Mon, 13 Apr 2015 15:10:00 GMT</pubDate></item><item><title>Facebook Peeve #1: The Hijack</title><description>&lt;h5 id="iseeitoverandoveragain"&gt;I see it over and over again.&lt;/h5&gt;
 
